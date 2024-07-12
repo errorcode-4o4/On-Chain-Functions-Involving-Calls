@@ -46,12 +46,12 @@ Purpose: The _delegate function in the Proxy contract facilitates the delegation
 
 Detailed Usage:
 
-delegatecall: Executes the code of the implementation contract within the context of the Proxy contract. This means that the state variables and storage of the Proxy contract are accessible and modifiable by the implementation contract. <br />
-Assembly Operations:
-- Copies the calldata (transaction input data) to memory. <br />
-- Executes the delegatecall to the implementation contract with the specified gas limit. <br />
-- Copies the returned data from the delegatecall to the return data area. <br />
-- Handles errors by reverting the transaction if the delegatecall returns 0. <br />
+- delegatecall: Executes the code of the implementation contract within the context of the Proxy contract. This means that the state variables and storage of the Proxy contract are accessible and modifiable by the implementation contract. <br />
+- Assembly Operations:
+    - Copies the calldata (transaction input data) to memory. <br />
+    - Executes the delegatecall to the implementation contract with the specified gas limit. <br />
+    - Copies the returned data from the delegatecall to the return data area. <br />
+    - Handles errors by reverting the transaction if the delegatecall returns 0. <br />
 
 Impact:
 
