@@ -1,11 +1,11 @@
-## On-Chain-Functions-Involving-Calls
+# On-Chain-Functions-Involving-Calls
 
-# Introduction
-Protocol Name: Aave V2
-Category: DeFi
-Smart Contract: LendingPoolAddressesProvider
+## Introduction
+Protocol Name: Aave V2 <br />
+Category: DeFi <br />
+Smart Contract: LendingPoolAddressesProvider <br />
 
-# Function Analysis
+## Function Analysis
 Function Name: _delegate
 Block Explorer Link: [Etherscan: LendingPool](https://etherscan.io/address/0xb53c1a33016b2dc2ff3653530bff1848a515c8c5#code)
 
@@ -40,7 +40,7 @@ function _delegate(address implementation) internal {
 
 Used Encoding/Decoding or Call Method: delegatecall
 
-# Explanation
+## Explanation
 
 Purpose: The _delegate function in the Proxy contract facilitates the delegation of function calls to an implementation contract specified by implementation. It utilizes delegatecall, a low-level operation in Solidity that allows the contract to execute code from another contract while maintaining the context of the caller.
 
